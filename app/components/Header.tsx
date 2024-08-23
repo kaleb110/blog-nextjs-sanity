@@ -19,6 +19,7 @@ const App = async () => {
         <Link href="/">Blogs</Link>
         <Link href="/resources">Resources</Link>
         <Link href="/projects">Projects</Link>
+        <button>log in</button>
       </div>
 
       <div className="flex items-center gap-2">
