@@ -81,7 +81,7 @@ const Search = ({ posts }: any) => {
                 {/* Content goes here */}
                 <ul>
                   {searchQuery !== "" ?
-                    filteredPosts.map((post) => {
+                    filteredPosts.map((post: any) => {
                       return (
                         <Link onClick={handleSearch} href={`/blog/${post.slug.current}`} key={post.slug}>
                           <h1
@@ -90,7 +90,7 @@ const Search = ({ posts }: any) => {
                             {post.title}
                           </h1>
                           <ul className="text-blue-600 flex gap-3 text-sm">
-                            {post.tags.map((tag, index) => (
+                            {post.tags.map((tag: any, index: any) => (
                               <li key={index}>{tag}</li>
                             ))}
                           </ul>
