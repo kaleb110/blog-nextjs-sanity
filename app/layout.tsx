@@ -20,12 +20,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         className={`${roboto.className} ${montserrat.className} bg-gray-100 dark:bg-gray-800`}
       >
         <Head>
-          <link rel="icon" href="/favicon.ico" sizes="any"/>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
         <Provider>
-          <Header />
-          {children}
-          <Footer />
+            <Header />
+            {children}
+            <Footer />
         </Provider>
       </body>
     </html>

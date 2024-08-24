@@ -5,7 +5,7 @@ const Provider: React.FC<{ children: any }> = ({ children }) => {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="dark"
+      defaultTheme="system"
       enableSystem={true}
       disableTransitionOnChange={true}
     >

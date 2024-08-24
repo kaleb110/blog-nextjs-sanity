@@ -22,10 +22,10 @@ const PostList = ({posts}: any) => {
                 alt="Card background"
                 className="object-cover w-full h-auto rounded-t-xl"
                 src={urlFor(post.mainImage).url()}
-                width={250} 
-                height={160} 
-                quality={75} 
-                priority 
+                width={250}
+                height={160}
+                quality={75}
+                priority
               />
             </div>
             <div className="py-4 px-4 flex-col items-start h-[210px] sm:h-[240px] border-1 border-slate-200 dark:border-slate-600 w-full">
