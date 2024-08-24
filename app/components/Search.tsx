@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import useSearchStore from "./Zustand";
-import SearchIcon from "../icons/SearchIcon";
-import ClearIcon from "../icons/ClearIcon";
+import useSearchStore from "./additions/Zustand";
+import SearchIcon from "./icons/SearchIcon";
+import ClearIcon from "./icons/ClearIcon";
 import Link from "next/link";
 
 const Search = ({ posts }: any) => {

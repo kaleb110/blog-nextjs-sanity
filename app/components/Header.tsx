@@ -1,6 +1,6 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import Search from "./additions/Search";
+import Search from "./Search";
 import sanityQuery from "../api/sanityQuery";
 const Drawer = dynamic(() => import("@/app/components/Drawer"))
 const ThemeSwitch = dynamic(() => import("@/app/components/themes/ThemeSwitcher"))
