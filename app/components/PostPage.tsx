@@ -60,8 +60,8 @@ export default function PostContent ({ post }: PostContentProps) {
         width={610}
         height={400}
         quality={75}
-        priority 
-        className="w-full"
+        priority
+        className="w-full h-[400px] object-cover"
       />
 
       <div className="text-slate-700 dark:text-slate-300 w-full max-w-full overflow-hidden break-words whitespace-normal">

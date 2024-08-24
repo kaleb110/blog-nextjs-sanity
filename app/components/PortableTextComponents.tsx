@@ -52,7 +52,7 @@ export const portableTextComponents = {
       </p>
     ),
     ul: ({ children }: any) => (
-      <ul className="list-disc pl-5 py-2 ">
+      <ul className="list-disc pl-5 py-2">
         {children}
       </ul>
     ),
@@ -62,7 +62,7 @@ export const portableTextComponents = {
       </ol>
     ),
     li: ({ children }: any) => (
-      <li className="py-1 ">{children}</li>
+      <li className="py-1">{children}</li>
     ),
   },
   marks: {

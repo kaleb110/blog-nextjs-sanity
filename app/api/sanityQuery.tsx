@@ -13,11 +13,12 @@ const sanityQuery = async () => {
       postIntro
     }
   `;
-    const filterPosts = await client.fetch(query);
+    const filterPosts = await client.fetch(query, { next: { revalidate: 60 } });
 
     return filterPosts;
-  } catch (error) {
-    
+  } catch (error: any) {
+    throw new Error("error:", error)
+    return <div>Post Not Found</div>
   }
   
 }

@@ -19,8 +19,8 @@ const App = async () => {
       {/* Main Navigation for Larger Screens */}
       <div className="hidden sm:flex gap-4 text-lg">
         <Link href="/">Home</Link>
-        <Link href="/resources">Resources</Link>
-        <Link href="/projects">Projects</Link>
+        <Link href="/">Resources</Link>
+        <Link href="/">Projects</Link>
       </div>
 
       <div className="flex items-center gap-2">

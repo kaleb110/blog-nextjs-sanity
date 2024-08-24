@@ -20,7 +20,7 @@ const PostList = ({posts}: any) => {
             <div className="overflow-visible">
               <Image
                 alt="Card background"
-                className="object-cover w-full h-auto rounded-t-xl"
+                className="object-cover w-full h-[160px] rounded-t-xl"
                 src={urlFor(post.mainImage).url()}
                 width={250}
                 height={160}

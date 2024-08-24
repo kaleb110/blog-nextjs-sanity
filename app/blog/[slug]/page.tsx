@@ -70,6 +70,7 @@ export default async function PostPage({ params }: PostProps) {
       }
       `,
       { slug },
+      { next: { revalidate: 60 } }
     );
 
     return <PostContent post={post} />;
