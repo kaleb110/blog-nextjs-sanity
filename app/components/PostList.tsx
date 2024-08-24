@@ -16,7 +16,7 @@ const PostList = ({posts}: any) => {
     <div className="flex gap-6 items-start max-sm:flex-wrap justify-between max-sm:justify-center">
       {posts.map((post: any, index: number) => (
         <Link key={index} href={`/blog/${post.slug.current}`}>
-          <div className="w-full max-w-[320px] cursor-pointer rounded-xl shadow-md hover:bg-slate-100 dark:hover:bg-slate-800 dark:bg-slate-900 transition-all">
+          <div className="w-full max-w-[320px] cursor-pointer rounded-xl shadow-md hover:bg-slate-200 dark:hover:bg-slate-800 dark:bg-slate-900 transition-all">
             <div className="overflow-visible">
               <Image
                 alt="Card background"

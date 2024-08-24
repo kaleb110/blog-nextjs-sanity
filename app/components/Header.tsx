@@ -12,13 +12,17 @@ const App = async () => {
   return (
     <div className="flex justify-between items-center py-4 px-6 sm:px-8 lg:px-32 relative">
       {/* Logo Section */}
-      <a href="/" className="font-bold text-lg">
+      <Link href="/" className="font-bold text-lg">
         JSdev
-      </a>
+      </Link>
 
       {/* Main Navigation for Larger Screens */}
       <div className="hidden sm:flex gap-4 text-lg">
-        <Link href="/">Home</Link>
+        <Link
+          href="/"
+        >
+          Home
+        </Link>
         <Link href="/">Resources</Link>
         <Link href="/">Projects</Link>
       </div>

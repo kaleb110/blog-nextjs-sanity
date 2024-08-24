@@ -32,7 +32,7 @@ const Drawer = (props: Props) => {
             {menuItems.map((item) => (
               <li key={item}>
                 <Link
-                  href={`/${item === "blog" ? "" : item}`}
+                  href={`/`}
                   onClick={() => setToggleMenu(false)}
                   className="hover:text-blue-400 transition-colors duration-300"
                 >
