@@ -9,6 +9,7 @@ A modern and minimalist blog application built with vision for customizablity an
 
 - View real time live blog posts
 - Search for posts by tag
+- dark/light theme
 - more features can be added or customized
 
 ## Tech Stack
