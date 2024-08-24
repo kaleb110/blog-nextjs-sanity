@@ -1,25 +1,27 @@
-# My Blog App
+# Blog app
+## [Live](https://blog-app-six-beta.vercel.app/)
 
-A modern blog application built with Next.js, Tailwind CSS, Sanity, and Zustand. This app features post viewing, searching, and more.
+![Meals Website](https://i.postimg.cc/c1chvfSf/Screenshot-2024-08-24-184559.png)
+
+A modern and minimalist blog application built with vision for customizablity and scalablity.
 
 ## Features
 
-- View blog posts
-- Search for posts
-- Styled with Tailwind CSS
-- State management using Zustand
-- Backend CMS with Sanity
+- View real time live blog posts
+- Search for posts by tag
+- more features can be added or customized
 
-## Technologies Used
+## Tech Stack
 
-- **Frontend**: Next.js
-- **Styling**: Tailwind CSS
-- **Backend CMS**: Sanity
-- **State Management**: Zustand
+- **Frontend**: Next.js for SEO better performance
+- **Styling**: Tailwind CSS for easier styling
+- **Backend CMS**: Sanity as a CMS service
+- **State Management**: Zustand for state managment
+- **Typescript**: for type validation
 
 ## Getting Started
 
-To get started with this project locally, follow these steps:
+To get started, follow these steps:
 
 ### Prerequisites
 
@@ -31,7 +33,7 @@ To get started with this project locally, follow these steps:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/kaleb110/blog-app.git
    cd your-repository
 
 1. **Install Dependancies**
@@ -45,8 +47,7 @@ To get started with this project locally, follow these steps:
 
    ```bash
    SANITY_PROJECT_ID=your-sanity-project-id
-   SANITY_DATASET=your-dataset-name
-   NEXT_PUBLIC_BASE_URL=your-base-url
+   SANITY_API_TOKEN=your-sanity-api-token
 
 1. **Run the development server**
    
