@@ -13,7 +13,7 @@ const sanityQuery = async () => {
       postIntro
     }
   `;
-    const filterPosts = await client.fetch(query, { next: { revalidate: 60 } });
+    const filterPosts = await client.fetch(query);
 
     return filterPosts;
   } catch (error: any) {
