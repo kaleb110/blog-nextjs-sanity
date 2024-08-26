@@ -1,7 +1,7 @@
 # Blog app
 ## [Live](https://blog-nextjs-sanity-ti35.vercel.app/)
 
-![Meals Website](https://i.postimg.cc/c1chvfSf/Screenshot-2024-08-24-184559.png)
+![Meals Website](https://i.postimg.cc/90KL1vhW/Screenshot-2024-08-26-175907.png)
 
 A modern and minimalist blog application built with vision for customizablity and scalablity.
 
