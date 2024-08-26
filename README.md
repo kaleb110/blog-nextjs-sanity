@@ -36,7 +36,7 @@ To get started, follow these steps:
 
    ```bash
    git clone https://github.com/kaleb110/blog-app.git
-   cd your-repository
+   cd blog-nextjs-sanity
 
 1. **Install Dependancies**
    
