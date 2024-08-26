@@ -1,5 +1,5 @@
 # Blog app
-## [Live](https://blog-app-six-beta.vercel.app/)
+## [Live](https://blog-nextjs-sanity-ti35.vercel.app/)
 
 ![Meals Website](https://i.postimg.cc/c1chvfSf/Screenshot-2024-08-24-184559.png)
 
