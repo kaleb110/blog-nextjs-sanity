@@ -1,7 +1,6 @@
 import PostList from "./components/PostList";
 import sanityQuery from "./api/sanityQuery";
 import Link from "next/link";
-import LoadingSkeleton from "./components/LoadingSkeleton";
 const HomePage = async () => {
   const filteredPosts = await sanityQuery()
   return (
