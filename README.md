@@ -14,8 +14,9 @@ A modern and minimalist blog application built with vision for customizablity an
 
 ## Tech Stack
 
-- **Frontend**: Next.js for SEO better performance
+- **Frontend**: Next.js for SEO and better performance
 - **Styling**: Tailwind CSS for easier styling
+- **UI library**: shadcn UI/component
 - **Backend CMS**: Sanity as a CMS service
 - **State Management**: Zustand for state managment
 - **Typescript**: for type validation
