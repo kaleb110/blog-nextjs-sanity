@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { roboto, montserrat } from "./components/fonts/fonts";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 import type { Metadata } from "next";
 
@@ -23,9 +24,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
         <Provider>
-            <Header />
-            {children}
-            <Footer />
+          <Header />
+          {children}
+          <Analytics />
+          <Footer />
         </Provider>
       </body>
     </html>

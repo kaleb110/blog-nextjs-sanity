@@ -12,6 +12,7 @@ const PostList = ({posts}: any) => {
     return date.toLocaleDateString("en-US", options);
   }
 
+
   return (
     <div className="flex gap-6 items-start max-sm:flex-wrap justify-between max-sm:justify-center">
       {posts.map((post: any, index: number) => (

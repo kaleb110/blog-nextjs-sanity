@@ -1,15 +1,15 @@
-"use client"
+"use client";
 import { useTheme } from "next-themes";
 import { SunIcon } from "../icons/SunIcon"; // Ensure correct import
 import { MoonIcon } from "../icons/MoonIcon";
 
 const ThemeToggle = () => {
   const { resolvedTheme, setTheme } = useTheme();
-
   const toggleTheme = () => {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
   };
 
+  if (!resolvedTheme) return null;
   return (
     <button
       onClick={toggleTheme}

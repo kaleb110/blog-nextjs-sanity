@@ -1,5 +1,7 @@
 import PostList from "./components/PostList";
 import sanityQuery from "./api/sanityQuery";
+import Link from "next/link";
+import LoadingSkeleton from "./components/LoadingSkeleton";
 const HomePage = async () => {
   const filteredPosts = await sanityQuery()
   return (
@@ -7,9 +9,9 @@ const HomePage = async () => {
       <div className="flex flex-col w-full">
         <div className="flex justify-between items-center pb-4 py-3 max-sm:px-3">
           <h1 className="text-2xl">Latest blogs</h1>
-          <button className="hover:text-blue-400 transition-all">
+          <Link href="/allblogs" className="hover:text-blue-400 transition-all">
             View all &#8594;
-          </button>
+          </Link>
         </div>
         <PostList posts={filteredPosts} />
       </div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import Search from "./Search";
 import sanityQuery from "../api/sanityQuery";
+import NavLinks from "./NavLinks";
 const Drawer = dynamic(() => import("@/app/components/Drawer"))
 const ThemeSwitch = dynamic(() => import("@/app/components/themes/ThemeSwitcher"))
 
@@ -17,15 +18,7 @@ const App = async () => {
       </Link>
 
       {/* Main Navigation for Larger Screens */}
-      <div className="hidden sm:flex gap-4 text-lg">
-        <Link
-          href="/"
-        >
-          Home
-        </Link>
-        <Link href="/">Resources</Link>
-        <Link href="/">Projects</Link>
-      </div>
+      <NavLinks />
 
       <div className="flex items-center gap-2">
         {/* search button */}

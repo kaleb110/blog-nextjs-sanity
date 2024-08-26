@@ -67,3 +67,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .btn-gradient {
+      background:
+        /* linear-gradient(270deg, #13ADC7 0%, #945DD6 100%) */
+        linear-gradient(270deg, #496aec 0%, #a947d7 100%)
+    }
+}

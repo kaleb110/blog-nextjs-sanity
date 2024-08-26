@@ -51,10 +51,10 @@ const Search = ({ posts }: any) => {
     <>
       <SearchIcon setIsModalOpen={setIsModalOpen} />
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-70 z-50 transition-opacity duration-300 ease-out opacity-100">
           <div
             ref={modalRef}
-            className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[90vw] sm:w-[50vw] h-[80vh] bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg overflow-hidden"
+            className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[90vw] sm:w-[50vw] h-[80vh] bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg overflow-hidden animate-slideIn"
           >
             <div className="w-full mb-4">
               <div className="relative">
@@ -64,7 +64,7 @@ const Search = ({ posts }: any) => {
                   placeholder="Type something..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full sm:text-2xl text-xl pl-4 pr-16 sm:py-2 py-2 dark:border-gray-700 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-600 dark:placeholder-gray-400 focus:outline-none rounded-lg"
+                  className="w-full sm:text-2xl text-xl pl-4 pr-16 sm:py-2 py-2 dark:border-gray-700 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 placeholder-gray-600 dark:placeholder-gray-400 focus:outline-none "
                 />
                 {searchQuery && (
                   <button
@@ -86,7 +86,7 @@ const Search = ({ posts }: any) => {
                         onClick={handleSearch}
                         href={`/blog/${post.slug.current}`}
                         key={post.slug}
-                        className="block py-4 px-4 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-all duration-200"
+                        className="block py-4 px-4 mb-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:dark:bg-gray-600 rounded-sm transition-all duration-200"
                       >
                         <h1
                           className={`text-gray-900 dark:text-gray-100 text-lg sm:text-xl font-bold`}
@@ -102,7 +102,7 @@ const Search = ({ posts }: any) => {
                     ))
                   ) : (
                     <h1 className="text-center pt-6 text-gray-600 dark:text-gray-400">
-                      Nothing yet :(
+                      Nothing Here :(
                     </h1>
                   )}
                 </ul>
